@@ -13,6 +13,7 @@ export class Favorites {
 
     save(){
         localStorage.setItem('@github-favorites:', JSON.stringify(this.entries))
+        this.root.querySelector('.search input').value = ''
     }
 
     async adduser(username){
